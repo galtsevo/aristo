@@ -4,18 +4,27 @@ use core\Model;
 
 class Catalog extends Model
 {
+    public function getGallery($route){
+        $params = ['itemid' => $route['id']];
+        $result = $this->db->row("SELECT * FROM catalog_item_gallery 
+                                        where itemid =:itemid ", $params);
+    }
 
     public function getTypeItems($route){
+        $params = ['idtype' => $route['id']];
 
-        $max = 6;
-        $params = [
-//            'max' => $max,
-            'idtype' => $route['id'],
-        ];
+        $result = $this->db->row("SELECT i.id as itemid, i.title, i.path, i.idtype, t.title as ctype, t.intro_title, t.intro_text, t.addition, i.addition as iaddition FROM catalog_type t 
+                                        left join catalog_item i ON t.id=i.idtype
+                                        where t.id=:idtype ORDER BY i.order_by ASC LIMIT 10", $params);
 
-        $result = $this->db->row("SELECT i.id, i.title, i.path, i.idtype, t.title as ctype FROM catalog_item i 
-                                        left join catalog_type t ON t.id=i.idtype
-                                        where idtype=:idtype ORDER BY i.id DESC LIMIT 6", $params);
+        return $result;
+    }
+
+    public function getItems($route){
+        $params = ['iditem' => $route['id']];
+
+        $result = $this->db->row("SELECT * from catalog_item where id=:iditem", $params);
+
         return $result;
     }
 

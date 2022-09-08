@@ -13,6 +13,7 @@ class MainController extends Controller
         $vars = [
             'items' => $result,
         ];
+
         $this->view->render('Главная страница', $vars);
     }
 

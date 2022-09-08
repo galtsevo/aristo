@@ -36,6 +36,12 @@ class Db
         return $result->fetchColumn();
     }
 
+    public function insert($sql, $params = []){
+        $query = $this->query($sql, $params);
+//        $query->execute(PDO::FETCH_ASSOC);
+        return $this->db->lastInsertId();
+    }
+
     private function __clone() { //запрещаем клонирование объекта модификатором private
     }
 

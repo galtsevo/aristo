@@ -25,11 +25,13 @@ class Router
     }
 
     public function match(){
-        $url = trim($_SERVER['REQUEST_URI'], $this->local.'/');
-//        $url = trim($_SERVER['REQUEST_URI'], '/');
-        //debug($this->routes);
+//        $url = trim($_SERVER['REQUEST_URI'], $this->local.'/');
+        $url = trim($_SERVER['REQUEST_URI'], '/');
+//        debug($url);
         foreach ($this->routes as $route => $params){
+//            debug($matches);
             if(preg_match($route, $url, $matches)){
+//                debug($matches);
                 foreach ($matches as $key => $match) {
                     if (is_string($key)) {
                         if (is_numeric($match)) {
@@ -38,6 +40,7 @@ class Router
                         $params[$key] = $match;
                     }
                 }
+
                 $this->params = $params;
                 return true;
             }

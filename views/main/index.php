@@ -1,72 +1,80 @@
-<!-- container -->
-<div class="container">
-
-    <div class="row row-eq-height">
-        <?php foreach ($items as $item): ?>
-            <div class="col-md-4" >
-                <div class="item">
-                    <a href="catalog/type/<?php echo $item['id']; ?>">
-                        <h3><i class="sprite sprite-right_o"></i><?=$item['title'];?></h3>
-                        <div class="img-wrap">
-                            <img src="<?=$item['path'];?>" alt="<?=$item['title'];?>" title="<?=$item['title'];?>">
+<section class="u-align-center u-clearfix u-palette-5-dark-2 u-section-1" id="carousel_8667">
+    <div class="u-clearfix u-sheet u-valign-middle-xs u-sheet-1">
+        <div class="u-black u-shape u-shape-rectangle u-shape-1"></div>
+        <div class="u-custom-color-1 u-shape u-shape-rectangle u-shape-2"></div>
+        <div class="u-clearfix u-expanded-width-sm u-expanded-width-xs u-layout-wrap u-layout-wrap-1">
+            <div class="u-layout">
+                <div class="u-layout-row">
+                    <div class="u-align-left u-container-style u-layout-cell u-left-cell u-size-31 u-white u-layout-cell-1">
+                        <div class="u-container-layout u-container-layout-1">
+                            <h1 class="u-custom-font u-font-pt-sans u-text u-text-1">Встроенная&nbsp;<br>мебель на заказ
+                            </h1>
+                            <h3 class="u-custom-font u-font-roboto u-text u-text-2"> Шкафы и двери купе, кухни, Гардеробная система АРИСТО,&nbsp;&nbsp;корпуская мебель</h3>
                         </div>
-                    </a>
-                    <div class="tags">
-                        <a href="#"><i class="sprite sprite-image"></i> Подробнее</a>
-                        <a href="#"><i class="sprite sprite-calc_g"></i> Калькулятор</a>
-                        <a href="#"><i class="sprite sprite-ruler_s"></i> Заказать проект</a>
                     </div>
-<!--                    <a style="margin-top: 10px" href="oracal/" class="btnpdr">Подробнее</a>-->
+                    <div class="u-container-style u-image u-image-default u-layout-cell u-right-cell u-size-29 u-image-1" data-image-width="4608" data-image-height="3456">
+                        <div class="u-container-layout u-container-layout-2"></div>
+                    </div>
                 </div>
             </div>
-        <?php endforeach; ?>
-
-
-
-        <!-- -->
-        <div class="col-md-4" style="height: 68px;">
-            <a href="materialyi/" class="offer">
-                <h3>Материалы</h3>
-                <img src="files/pics/materials.png" alt="">
-            </a>
         </div>
-        <div class="col-md-4 col-md-push-4" style="height: 68px;">
-            <a href="furnitura/" class="offer text-right">
-                <h3>Фурнитура</h3>
-                <img src="files/pics/furniture.png" alt="">
-            </a>
-
-        </div>
-        <div class="col-md-4 col-md-pull-4" style="height: 68px;">
-            <a href="materialyi/" class="offer">
-                <h3>Цвета</h3>
-                <img src="files/pics/materials.png" alt="">
-            </a>
+    </div>
+</section>
+<section class="u-align-center u-clearfix u-section-2" id="carousel_38ad">
+    <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="u-layout-grid u-list u-list-1">
+            <div class="u-repeater u-repeater-1">
+                <?php foreach ($items as $item): ?>
+                    <div class="u-align-center u-container-style u-list-item u-repeater-item u-shape-rectangle">
+                        <div class="u-container-layout u-similar-container u-container-layout-1">
+                            <div class="u-align-center u-container-style u-expanded-width u-group u-video-cover u-white u-group-1">
+                                <div class="u-container-layout u-container-layout-2">
+                                    <h3 class="u-custom-font u-font-roboto u-text u-text-1"><?=$item['title'];?></h3>
+                                </div>
+                            </div>
+                            <img alt="" class="u-border-grey-15 u-expanded-width-xl u-hover-feature u-image u-image-round u-image-1" src="<?=$item['path'];?>" data-image-width="360" data-image-height="259" data-href="catalog/type/<?php echo $item['id']; ?>" data-page-id="354015450">
+                            <div class="u-border-1 u-border-custom-color-1 u-container-style u-expanded-width u-group u-shape-rectangle u-group-2" data-href="catalog/type/<?php echo $item['id']; ?>">
+                                <div class="u-container-layout u-container-layout-3">
+                                    <p class="u-text u-text-2">
+                                        <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-grey-80 u-btn-1" href="catalog/type/<?php echo $item['id']; ?>" data-page-id="354015450"><span class="u-file-icon u-icon u-text-custom-color-1 u-icon-1"><img src="public/img/1829552.png" alt=""></span>&nbsp;Подробнее
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <?php endforeach; ?>
+            </div>
         </div>
     </div>
 
-    <section class="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h2>О нас</h2>
-                    <p>Компания <strong>Aristo-Чехов</strong>  предлагает Вам услуги по разработке и изготовлению
-                        нестандартных мебельных конструкций, которые сделают убранство Вашего дома удобным и красивым.
-                        Шкафы-купе и гардеробные изготавливаются с использованием систем компании "ARISTO"- ведущего
-                        мирового производителя легкосплавных и стальных профилей для мебельных конструкций, расчитанных
-                        более чем на 30 лет бесперебойной работы.</p>
-                    <p>Ваш интерьер преобразят наши витражи, зеркала с пескоструйными рисунками, фрески, цветные стекла,
-                        стилизованные пластики, наш шкаф станет самой интересной деталью в комнате. В кухнях нашего
-                        производства используются самые красивые и надежные фасады - МДФ с покрытием - эмаль и пластики
-                        разнообразных фактур и цветов, массив ценных пород дерева итальянского производства, и фурнитура
-                        лучших производителей. Мы выполним полный комплекс работ от замера до монтажа, причем замер
-                        бесплатный.</p>
-                    <p>Стаж работы наших специалистов в этом деле от 10 лет, мы знаем про мебельные конструкции все.
-                        Это отличная возможность купить мебель в чехове выгодно. А умельцы могут приобрести у нас
-                        отдельно все комплектующие и профили компании Aristo, заполнение для дверей-купе - зеркала,
-                        витражи, фрески, дсп и создать свой шкаф.</p>
-                </div>
-            </div>
-        </div>
 
-    </section>
+
+
+</section>
+<!--    <section class="u-align-center u-clearfix u-section-3" id="sec-c94d">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="u-expanded-width u-layout-grid u-list u-list-1">
+          <div class="u-repeater u-repeater-1">
+            <div class="u-align-center u-container-style u-custom-item u-list-item u-repeater-item u-shape-rectangle">
+              <div class="u-container-layout u-similar-container u-container-layout-1">
+                <img class="u-border-2 u-border-custom-color-1 u-expanded-width u-image u-image-round u-radius-10 u-image-1" src="public/img/materials.png" alt="" data-image-width="360" data-image-height="71">
+                <h3 class="u-custom-item u-text u-text-1">Материалы&nbsp; &nbsp; &nbsp;&nbsp;</h3>
+              </div>
+            </div>
+            <div class="u-align-center u-container-style u-custom-item u-list-item u-repeater-item u-shape-rectangle">
+              <div class="u-container-layout u-similar-container u-container-layout-2">
+                <img class="u-border-2 u-border-custom-color-1 u-expanded-width u-image u-image-round u-radius-10 u-image-2" src="public/img/materials.png" alt="" data-image-width="360" data-image-height="71">
+                <h3 class="u-custom-item u-text u-text-2">Цвета</h3>
+              </div>
+            </div>
+            <div class="u-align-center u-container-style u-custom-item u-list-item u-repeater-item u-shape-rectangle">
+              <div class="u-container-layout u-similar-container u-container-layout-3">
+                <img class="u-border-2 u-border-custom-color-1 u-expanded-width u-image u-image-round u-radius-10 u-image-3" src="public/img/furniture.png" alt="" data-image-width="360" data-image-height="70">
+                <h3 class="u-custom-item u-text u-text-3">Фурнитура</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>-->

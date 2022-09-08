@@ -2,7 +2,8 @@
 
 return [
     'all' => [
-        'type'
+        'type',
+        'item'
     ],
 
     'authorize' => [

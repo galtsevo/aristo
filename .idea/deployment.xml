@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="64654">
+  <component name="PublishConfigData" serverName="aristo3">
     <serverData>
-      <paths name="64654">
+      <paths name="aristo3">
         <serverdata>
           <mappings>
             <mapping local="$PROJECT_DIR$" web="/" />

@@ -16,6 +16,11 @@ return [
         'action' => 'type',
     ],
 
+    'catalog/item/{id:\d+}' => [
+        'controller' => 'catalog',
+        'action' => 'item',
+    ],
+
     'account/login' => [
         'controller' => 'account',
         'action' => 'login',
@@ -39,5 +44,30 @@ return [
     'main/catalog' => [
         'controller' => 'main',
         'action' => 'catalog',
+    ],
+
+    'feedback' => [
+        'controller' => 'feedback',
+        'action' => 'index',
+    ],
+
+    'feedback/commen' => [
+        'controller' => 'feedback',
+        'action' => 'commen',
+    ],
+
+    'feedback/commenadd' => [
+        'controller' => 'feedback',
+        'action' => 'commenadd',
+    ],
+
+    'calculator/dev' => [
+        'controller' => 'calculator',
+        'action' => 'dev',
+    ],
+
+    'zame' => [
+        'controller' => 'zamer',
+        'action' => 'index',
     ],
 ];
