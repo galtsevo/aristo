@@ -41,7 +41,8 @@ class CatalogController extends Controller
         $vars = [
             'title' => $result[0]['title'],
             'imgpath' => $result[0]['path'],
-            'addition' => $result[0]['addition']
+            'addition' => $result[0]['addition'],
+            'items' => $result
         ];
 //        debug($vars);
         $this->view->render('Каталог', $vars);

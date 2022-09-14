@@ -140,14 +140,14 @@
         <a href="mailto:aristo@yandex.ru" class="u-active-none u-border-active-palette-2-dark-1 u-border-hover-palette-2-base u-border-none u-btn u-button-style u-custom-font u-font-roboto u-hover-none u-none u-text-custom-color-1 u-text-hover-palette-2-base u-btn-3">ak-belle@mail.ru</a>
         <p class="u-custom-font u-font-roboto u-text u-text-default u-text-1"> Тел. +7 <span class="u-text-custom-color-1">(916)</span> 277 79 97
         </p>
-        <a href="/feedback" class="u-border-1 u-border-custom-color-1 u-border-hover-custom-color-1 u-btn u-btn-round u-button-style u-custom-font u-font-roboto u-hover-custom-color-1 u-none u-radius-3 u-text-custom-color-1 u-text-hover-white u-btn-4"> &nbsp;<span style="font-size: 1rem;">
-            <span style="font-size: 0.875rem;">О</span>
-            <span style="font-size: 0.75rem;">
-              <span style="font-size: 0.75rem;">братная </span>связь
-            </span>
-          </span>
-            <span style="font-size: 0.75rem;"></span>
-        </a>
+<!--        <a href="/feedback" class="u-border-1 u-border-custom-color-1 u-border-hover-custom-color-1 u-btn u-btn-round u-button-style u-custom-font u-font-roboto u-hover-custom-color-1 u-none u-radius-3 u-text-custom-color-1 u-text-hover-white u-btn-4"> &nbsp;<span style="font-size: 1rem;">-->
+<!--            <span style="font-size: 0.875rem;">О</span>-->
+<!--            <span style="font-size: 0.75rem;">-->
+<!--              <span style="font-size: 0.75rem;">братная </span>связь-->
+<!--            </span>-->
+<!--          </span>-->
+<!--            <span style="font-size: 0.75rem;"></span>-->
+<!--        </a>-->
     </div></footer>
 <section class="u-backlink u-clearfix u-grey-80">
 

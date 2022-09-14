@@ -164,6 +164,24 @@
   box-shadow: 0 0 8px 0 rgba(128,128,128,1);
 }
 
+ .u-section-2-item .u-image-3 {
+   height: 435px;
+   margin-top: 20px;
+   margin-bottom: 0;
+   filter: brightness(0.95);
+   box-shadow: 0 0 8px 0 rgba(128,128,128,1);
+ }
+
+ .u-section-2-item .u-image-7 {
+   /*height: 435px;*/
+   margin-top: 20px;
+   margin-bottom: 0;
+   filter: brightness(0.95);
+   box-shadow: 0 0 8px 0 rgba(128,128,128,1);
+ }
+
+
+
 .u-section-2-item .u-btn-5 {
   background-image: none;
   margin: 20px 387px 0 30px;

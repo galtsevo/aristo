@@ -12,7 +12,7 @@ class Main extends Model
     }
 
     public function getCatalogType(){
-        $result = $this->db->row("SELECT id, title, path FROM catalog_type");
+        $result = $this->db->row("SELECT id, title, path FROM catalog_type order by order_by");
         return $result;
     }
 
